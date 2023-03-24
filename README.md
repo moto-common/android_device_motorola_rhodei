@@ -1,4 +1,4 @@
-Moto G Stylus 5G 2021
+Moto G(62) 5G
 ============
 
 ## Copyrights
@@ -8,4 +8,4 @@ Copyright (C) Sony Mobile Communications 2020
 
 ## Device Tree
 
-Android device configuration for the Moto G Stylus 5G 2021 (**SM4350**).
+Android device configuration for the Moto G(62) 5G (**SM4350/SM6375**).
