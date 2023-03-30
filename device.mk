@@ -29,6 +29,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(DEVICE_PATH)/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+# Brightness
+SOONG_CONFIG_qtidisplay_brightness := true
+
 # Device Init
 PRODUCT_PACKAGES += \
     fstab.qcom.vendor_ramdisk \
