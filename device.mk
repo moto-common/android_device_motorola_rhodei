@@ -23,12 +23,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=420
 
-# Audio Configuration
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    $(DEVICE_PATH)/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    $(DEVICE_PATH)/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
-
 # Brightness
 SOONG_CONFIG_qtidisplay_brightness := true
 
@@ -40,10 +34,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_FOCAL_FINGERPRINT := true
-
-# Media
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 # Modules
 BOOT_KERNEL_MODULES := \
@@ -57,10 +47,6 @@ BOOT_KERNEL_MODULES := \
 
 # Power
 TARGET_IS_BLAIR := true
-
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/etc/thermal-engine-rhodei.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-rhodei.conf
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
