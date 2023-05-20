@@ -200,6 +200,7 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-focalservice
 vendor/lib64/hw/fingerprint.focaltech.default.so
 vendor/lib64/libRbsFlow.so
+vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 vendor/lib64/vendor.focaltech.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
