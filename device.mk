@@ -29,11 +29,6 @@ SOONG_CONFIG_qtidisplay_brightness := true
 # Device characteristics
 DEVICE_CHARACTERISTICS += hfr
 
-# Device Init
-PRODUCT_PACKAGES += \
-    fstab.qcom.vendor_ramdisk \
-    fstab.qcom
-
 # Fingerprint
 TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_FOCAL_FINGERPRINT := true
