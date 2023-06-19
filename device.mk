@@ -26,6 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Brightness
 SOONG_CONFIG_qtidisplay_brightness := true
 
+# Device characteristics
+DEVICE_CHARACTERISTICS += hfr
+
 # Device Init
 PRODUCT_PACKAGES += \
     fstab.qcom.vendor_ramdisk \
